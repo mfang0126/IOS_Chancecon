@@ -8,15 +8,28 @@
 
 import UIKit
 import CoreData
+import Firebase
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var drawerContainer:MMDrawerController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        IQKeyboardManager.sharedManager().enable = true
+        launchAdView()
+        
+        //Navigation bar customization
+//        UINavigationBar.appearance().backgroundColor = UIColor.blackColor()
+//        UINavigationBar.appearance().tintColor = UIColor.blackColor()
+//        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+
+
         return true
     }
 
@@ -106,6 +119,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func launchAdView() {
+        let adc = AdViewController()
+        let adview = LBLaunchImageAdView.init(window: self.window, andType: 1, andImgUrl: "http://nas.chancecon.co.nz/Application/Ads.png")
+        
+        adview!.clickBlock = {(LBClick) in
+            switch LBClick {
+            case 1100:
+                NSLog("jump to the ad link")
+                adc.view.backgroundColor = UIColor.whiteColor()
+                self.window?.rootViewController?.presentViewController(adc, animated: true, completion: nil)
+                break
+            case 1101:
+                NSLog("drectly jump to the homescreen")
+                break
+            case 1102:
+                NSLog("drectly jump to the homescreen")
+                break
+            default:
+                break
+            }
+        }
+    }
 
+    
+    func buildNavigationDrawer() {
+        // Navigate to Protected page
+        let mainStoryBoard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        
+        // Create View Controllers
+        let mainPage:MainPageViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController
+        
+        let leftSideMenu:LeftSideViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController
+        
+        let mainPageNav = UINavigationController(rootViewController:mainPage)
+        let leftSideMenuNav = UINavigationController(rootViewController:leftSideMenu)
+        
+        drawerContainer  = MMDrawerController(centerViewController: mainPageNav, leftDrawerViewController: leftSideMenuNav)
+        
+        drawerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
+        drawerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView
+        
+        window!.rootViewController = drawerContainer
+        window!.makeKeyAndVisible()
+    }
+    
+    
 }
 
