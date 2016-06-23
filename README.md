@@ -22,6 +22,7 @@ LBLaunchImageAd
 # Software Development Summary 
 
 
+
 Chancecon iOS App (99%)
 
 Actual working hour: 3 week
@@ -29,6 +30,7 @@ Actual working hour: 3 week
 The iOS application is mainly focusing on enhancing the customer service, and give the customer to have a good opportunity to access instance information from Construction Site, which is designed for Chancellor Construction Ltd.
 
 The application development is based on Zero iOS application project development, and complete individually. Thus this the first time to accomplish iOS full stack application development.
+
 
 
 Chancecon Android App(90%)
@@ -42,6 +44,7 @@ This is the first time to develop Android application on my own, and I am also t
 Chancellor Construction Website
 
 The website is developed by Wordpress and hosting on Amazon Web Service, and developed individually.
+
 
 
 Development History
