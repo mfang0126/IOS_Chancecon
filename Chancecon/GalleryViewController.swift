@@ -25,6 +25,8 @@ class GalleryViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         //Navigation Customization
         navigationController!.navigationBar.barStyle = .Black
+        navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+
 
         // Do any additional setup after loading the view.
     }

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LeftSideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var menuItems:[String] = ["ACCOUNT","DASHBOARD","GALLERY", "MESSAGES", "CONTACT"]
+    var menuItems:[String] = ["DASHBOARD","GALLERY", "CONTACT","NEWS","LOGOUT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,11 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     {
         let myCell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
         
-        myCell.textLabel?.text = menuItems[indexPath.row]
-        
+        myCell.textLabel!.text = menuItems[indexPath.row]
+        myCell.textLabel!.textColor = UIColor.whiteColor()
+        myCell.textLabel!.font = UIFont.boldSystemFontOfSize(20)
         myCell.backgroundColor = UIColor.clearColor()
+        myCell.textLabel?.numberOfLines = 4
         
         return myCell
         
@@ -55,15 +58,6 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             appDelegate.drawerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             break
         case 1:
-            let mainPageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController
-            let mainPageNav = UINavigationController(rootViewController: mainPageViewController)
-            
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.drawerContainer!.centerViewController = mainPageNav
-            appDelegate.drawerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            break
-        case 2:
             let galleryViewController = self.storyboard?.instantiateViewControllerWithIdentifier("GalleryViewController") as! GalleryViewController
             let galleryPageNav = UINavigationController(rootViewController: galleryViewController)
             
@@ -72,16 +66,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             appDelegate.drawerContainer!.centerViewController = galleryPageNav
             appDelegate.drawerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             break
-        case 3:
-            let notificationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NotificationViewController") as! NotificationViewController
-            let notificationPageNav = UINavigationController(rootViewController: notificationViewController)
-            
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.drawerContainer!.centerViewController = notificationPageNav
-            appDelegate.drawerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            break
-        case 4:
+        case 2:
             let aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AboutViewController") as! AboutViewController
             let aboutPageNav = UINavigationController(rootViewController: aboutViewController)
             
@@ -89,6 +74,29 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             
             appDelegate.drawerContainer!.centerViewController = aboutPageNav
             appDelegate.drawerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            
+            break
+        case 3:
+            let newViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NewsViewController") as! NewsViewController
+            let aboutNewsView = UINavigationController(rootViewController: newViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.drawerContainer!.centerViewController = aboutNewsView
+            appDelegate.drawerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            break
+        case 4:
+            let firebaseAuth = FIRAuth.auth()
+            do {
+                try firebaseAuth?.signOut()
+                
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+            //Back to the Signin Page
+            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc: ViewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            self.presentViewController(vc, animated: true, completion: nil)
             
             break
         default:

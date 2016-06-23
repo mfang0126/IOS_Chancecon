@@ -12,10 +12,15 @@ class AdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Ad links
+
         UIApplication.sharedApplication().openURL(NSURL(string: "Http://chancecon.co.nz")!)
-        // Do any additional setup after loading the view, typically from a nib.
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc: ViewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        self.presentViewController(vc, animated: true, completion: nil)
+        NSLog("Back to login page")
     }
     
     override func didReceiveMemoryWarning() {

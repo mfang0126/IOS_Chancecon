@@ -158,7 +158,7 @@
         _secondsCountDown++;
         [self.skipBtn setTitle:[NSString stringWithFormat:@"%ld | SKIP",_secondsCountDown] forState:UIControlStateNormal];
     }else{
-        
+            
         [countDownTimer invalidate];
         countDownTimer = nil;
         [self startcloseAnimation];

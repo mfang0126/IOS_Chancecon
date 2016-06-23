@@ -128,7 +128,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             switch LBClick {
             case 1100:
                 NSLog("jump to the ad link")
-                adc.view.backgroundColor = UIColor.whiteColor()
                 self.window?.rootViewController?.presentViewController(adc, animated: true, completion: nil)
                 break
             case 1101:

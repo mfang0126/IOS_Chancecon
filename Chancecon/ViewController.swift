@@ -10,19 +10,21 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var Username: UITextField!
     @IBOutlet weak var Password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     @IBAction func SignInTapped(sender: AnyObject) {
         let userEmailAddress = Username.text
         let userPassword = Password.text
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
             self.presentViewController(myAlert, animated: true, completion: nil)
             return
         }
-
+        
         let spinningActivity = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         spinningActivity.labelText = "Loading"
         spinningActivity.detailsLabelText = "Please wait"
@@ -53,13 +55,13 @@ class ViewController: UIViewController {
                 spinningActivity.hide(true)
                 
             } else {
-                print("Loged in")
+                print("Loged in ")
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 
                 appDelegate.buildNavigationDrawer()
             }
         })
-
+        
     }
     
     

@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A06F6321D196A8E009030F1 /* SKCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61B1D196A8E009030F1 /* SKCache.swift */; };
+		1A06F6331D196A8E009030F1 /* SKCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61C1D196A8E009030F1 /* SKCacheable.swift */; };
+		1A06F6341D196A8E009030F1 /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61D1D196A8E009030F1 /* SKCaptionView.swift */; };
+		1A06F6351D196A8E009030F1 /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61E1D196A8E009030F1 /* SKDetectingImageView.swift */; };
+		1A06F6361D196A8E009030F1 /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61F1D196A8E009030F1 /* SKDetectingView.swift */; };
+		1A06F6371D196A8E009030F1 /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6201D196A8E009030F1 /* SKIndicatorView.swift */; };
+		1A06F6381D196A8E009030F1 /* SKLocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6211D196A8E009030F1 /* SKLocalPhoto.swift */; };
+		1A06F6391D196A8E009030F1 /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6221D196A8E009030F1 /* SKPhoto.swift */; };
+		1A06F63A1D196A8E009030F1 /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6241D196A8E009030F1 /* SKPhotoBrowser.swift */; };
+		1A06F63B1D196A8E009030F1 /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6251D196A8E009030F1 /* SKZoomingScrollView.swift */; };
+		1A06F63C1D196A8E009030F1 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6261D196A8E009030F1 /* UIImage+Rotation.swift */; };
+		1A06F63D1D196A8E009030F1 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6271D196A8E009030F1 /* UIView+Radius.swift */; };
+		1A06F63E1D196A8E009030F1 /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A06F6281D196A8E009030F1 /* SKPhotoBrowser.bundle */; };
+		1A06F63F1D196A8E009030F1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A06F62A1D196A8E009030F1 /* Info.plist */; };
+		1A06F6411D196A8E009030F1 /* SKPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F62D1D196A8E009030F1 /* SKPhotoBrowser-dummy.m */; };
+		1A40F5E61D1959D000F7A1FA /* PhotoBroswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F5E51D1959D000F7A1FA /* PhotoBroswerViewController.swift */; };
+		1A40F5E91D19605C00F7A1FA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F5E81D19605C00F7A1FA /* CollectionViewCell.swift */; };
+		1A40F5F61D19629E00F7A1FA /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5EA1D19629E00F7A1FA /* image0.jpg */; };
+		1A40F5F71D19629E00F7A1FA /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5EB1D19629E00F7A1FA /* image1.jpg */; };
+		1A40F5F81D19629E00F7A1FA /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5EC1D19629E00F7A1FA /* image10.jpg */; };
+		1A40F5F91D19629E00F7A1FA /* image12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5ED1D19629E00F7A1FA /* image12.jpg */; };
+		1A40F5FA1D19629E00F7A1FA /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5EE1D19629E00F7A1FA /* image2.jpg */; };
+		1A40F5FB1D19629E00F7A1FA /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5EF1D19629E00F7A1FA /* image3.jpg */; };
+		1A40F5FC1D19629E00F7A1FA /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5F01D19629E00F7A1FA /* image4.jpg */; };
+		1A40F5FD1D19629E00F7A1FA /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5F11D19629E00F7A1FA /* image5.jpg */; };
+		1A40F5FE1D19629E00F7A1FA /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5F21D19629E00F7A1FA /* image6.jpg */; };
+		1A40F5FF1D19629E00F7A1FA /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5F31D19629E00F7A1FA /* image7.jpg */; };
+		1A40F6001D19629E00F7A1FA /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5F41D19629E00F7A1FA /* image8.jpg */; };
+		1A40F6011D19629E00F7A1FA /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5F51D19629E00F7A1FA /* image9.jpg */; };
 		1A82B8471D13774600AF6702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8461D13774600AF6702 /* AppDelegate.swift */; };
 		1A82B8491D13774600AF6702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8481D13774600AF6702 /* ViewController.swift */; };
 		1A82B84C1D13774600AF6702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A82B84A1D13774600AF6702 /* Main.storyboard */; };
@@ -43,17 +72,50 @@
 		1AA97A931D14DB2600B10A07 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A921D14DB2600B10A07 /* MBProgressHUD.m */; };
 		1AA97A961D14E18D00B10A07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A951D14E18D00B10A07 /* SignUpViewController.swift */; };
 		1AA97AA11D15237E00B10A07 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A981D15237E00B10A07 /* CircleProgressBar.m */; };
-		1AA97AA21D15237E00B10A07 /* CircleProgressBar.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1AA97A9A1D15237E00B10A07 /* CircleProgressBar.xcconfig */; };
 		1AA97AA31D15237E00B10A07 /* CircleProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A9B1D15237E00B10A07 /* CircleProgressBar-dummy.m */; };
 		1AA97AA41D15237E00B10A07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AA97A9E1D15237E00B10A07 /* Info.plist */; };
+		1ACF710E1D199BDF0082A10B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF710D1D199BDF0082A10B /* NewsViewController.swift */; };
 		1AEB268E1D17B9E500DB4AF0 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB268D1D17B9E500DB4AF0 /* GalleryViewController.swift */; };
-		1AEB26901D17BA1200DB4AF0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB268F1D17BA1200DB4AF0 /* NotificationViewController.swift */; };
 		1AF3EEF31D18D5BE00083C2B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */; };
 		D965ADEA7AF1D24C361CD4FC /* Pods_Chancecon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E95964DBD2A9298CC0E6504 /* Pods_Chancecon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A6A4BF2A36EBCD162FFD333 /* Pods-Chancecon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chancecon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chancecon/Pods-Chancecon.release.xcconfig"; sourceTree = "<group>"; };
+		1A06F61B1D196A8E009030F1 /* SKCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKCache.swift; path = SKPhotoBrowser/SKCache.swift; sourceTree = "<group>"; };
+		1A06F61C1D196A8E009030F1 /* SKCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKCacheable.swift; path = SKPhotoBrowser/SKCacheable.swift; sourceTree = "<group>"; };
+		1A06F61D1D196A8E009030F1 /* SKCaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKCaptionView.swift; path = SKPhotoBrowser/SKCaptionView.swift; sourceTree = "<group>"; };
+		1A06F61E1D196A8E009030F1 /* SKDetectingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKDetectingImageView.swift; path = SKPhotoBrowser/SKDetectingImageView.swift; sourceTree = "<group>"; };
+		1A06F61F1D196A8E009030F1 /* SKDetectingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKDetectingView.swift; path = SKPhotoBrowser/SKDetectingView.swift; sourceTree = "<group>"; };
+		1A06F6201D196A8E009030F1 /* SKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKIndicatorView.swift; path = SKPhotoBrowser/SKIndicatorView.swift; sourceTree = "<group>"; };
+		1A06F6211D196A8E009030F1 /* SKLocalPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKLocalPhoto.swift; path = SKPhotoBrowser/SKLocalPhoto.swift; sourceTree = "<group>"; };
+		1A06F6221D196A8E009030F1 /* SKPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKPhoto.swift; path = SKPhotoBrowser/SKPhoto.swift; sourceTree = "<group>"; };
+		1A06F6231D196A8E009030F1 /* SKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKPhotoBrowser.h; path = SKPhotoBrowser/SKPhotoBrowser.h; sourceTree = "<group>"; };
+		1A06F6241D196A8E009030F1 /* SKPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKPhotoBrowser.swift; path = SKPhotoBrowser/SKPhotoBrowser.swift; sourceTree = "<group>"; };
+		1A06F6251D196A8E009030F1 /* SKZoomingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKZoomingScrollView.swift; path = SKPhotoBrowser/SKZoomingScrollView.swift; sourceTree = "<group>"; };
+		1A06F6261D196A8E009030F1 /* UIImage+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Rotation.swift"; path = "SKPhotoBrowser/extensions/UIImage+Rotation.swift"; sourceTree = "<group>"; };
+		1A06F6271D196A8E009030F1 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Radius.swift"; path = "SKPhotoBrowser/extensions/UIView+Radius.swift"; sourceTree = "<group>"; };
+		1A06F6281D196A8E009030F1 /* SKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SKPhotoBrowser.bundle; path = SKPhotoBrowser/SKPhotoBrowser.bundle; sourceTree = "<group>"; };
+		1A06F62A1D196A8E009030F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A06F62B1D196A8E009030F1 /* SKPhotoBrowser.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SKPhotoBrowser.modulemap; sourceTree = "<group>"; };
+		1A06F62C1D196A8E009030F1 /* SKPhotoBrowser.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SKPhotoBrowser.xcconfig; sourceTree = "<group>"; };
+		1A06F62D1D196A8E009030F1 /* SKPhotoBrowser-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
+		1A06F62E1D196A8E009030F1 /* SKPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
+		1A06F62F1D196A8E009030F1 /* SKPhotoBrowser-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPhotoBrowser-umbrella.h"; sourceTree = "<group>"; };
+		1A40F5E51D1959D000F7A1FA /* PhotoBroswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBroswerViewController.swift; sourceTree = "<group>"; };
+		1A40F5E81D19605C00F7A1FA /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1A40F5EA1D19629E00F7A1FA /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		1A40F5EB1D19629E00F7A1FA /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		1A40F5EC1D19629E00F7A1FA /* image10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpg; sourceTree = "<group>"; };
+		1A40F5ED1D19629E00F7A1FA /* image12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image12.jpg; sourceTree = "<group>"; };
+		1A40F5EE1D19629E00F7A1FA /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		1A40F5EF1D19629E00F7A1FA /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		1A40F5F01D19629E00F7A1FA /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		1A40F5F11D19629E00F7A1FA /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		1A40F5F21D19629E00F7A1FA /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		1A40F5F31D19629E00F7A1FA /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
+		1A40F5F41D19629E00F7A1FA /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
+		1A40F5F51D19629E00F7A1FA /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
 		1A82B8431D13774600AF6702 /* Chancecon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chancecon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A82B8461D13774600AF6702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A82B8481D13774600AF6702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,10 +186,11 @@
 		1AA97A9C1D15237E00B10A07 /* CircleProgressBar-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-prefix.pch"; sourceTree = "<group>"; };
 		1AA97A9D1D15237E00B10A07 /* CircleProgressBar-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-umbrella.h"; sourceTree = "<group>"; };
 		1AA97A9E1D15237E00B10A07 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACF710D1D199BDF0082A10B /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		1AEB268D1D17B9E500DB4AF0 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
-		1AEB268F1D17BA1200DB4AF0 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		712E7D77D7BE81BB879A4A84 /* Pods-Chancecon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chancecon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chancecon/Pods-Chancecon.debug.xcconfig"; sourceTree = "<group>"; };
+		80E6915FBB402862CC9F2322 /* Pods-Chancecon.ad hoc distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chancecon.ad hoc distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Chancecon/Pods-Chancecon.ad hoc distribution.xcconfig"; sourceTree = "<group>"; };
 		9E95964DBD2A9298CC0E6504 /* Pods_Chancecon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chancecon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +206,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A06F6291D196A8E009030F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A06F6281D196A8E009030F1 /* SKPhotoBrowser.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1A06F6301D196A8E009030F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A06F62A1D196A8E009030F1 /* Info.plist */,
+				1A06F62B1D196A8E009030F1 /* SKPhotoBrowser.modulemap */,
+				1A06F62C1D196A8E009030F1 /* SKPhotoBrowser.xcconfig */,
+				1A06F62D1D196A8E009030F1 /* SKPhotoBrowser-dummy.m */,
+				1A06F62E1D196A8E009030F1 /* SKPhotoBrowser-prefix.pch */,
+				1A06F62F1D196A8E009030F1 /* SKPhotoBrowser-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SKPhotoBrowser";
+			sourceTree = "<group>";
+		};
+		1A06F6311D196A8E009030F1 /* SKPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				1A06F61B1D196A8E009030F1 /* SKCache.swift */,
+				1A06F61C1D196A8E009030F1 /* SKCacheable.swift */,
+				1A06F61D1D196A8E009030F1 /* SKCaptionView.swift */,
+				1A06F61E1D196A8E009030F1 /* SKDetectingImageView.swift */,
+				1A06F61F1D196A8E009030F1 /* SKDetectingView.swift */,
+				1A06F6201D196A8E009030F1 /* SKIndicatorView.swift */,
+				1A06F6211D196A8E009030F1 /* SKLocalPhoto.swift */,
+				1A06F6221D196A8E009030F1 /* SKPhoto.swift */,
+				1A06F6231D196A8E009030F1 /* SKPhotoBrowser.h */,
+				1A06F6241D196A8E009030F1 /* SKPhotoBrowser.swift */,
+				1A06F6251D196A8E009030F1 /* SKZoomingScrollView.swift */,
+				1A06F6261D196A8E009030F1 /* UIImage+Rotation.swift */,
+				1A06F6271D196A8E009030F1 /* UIView+Radius.swift */,
+				1A06F6291D196A8E009030F1 /* Resources */,
+				1A06F6301D196A8E009030F1 /* Support Files */,
+			);
+			name = SKPhotoBrowser;
+			path = ../Pods/SKPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		1A40F6021D1962A800F7A1FA /* SampleImages */ = {
+			isa = PBXGroup;
+			children = (
+				1A40F5EA1D19629E00F7A1FA /* image0.jpg */,
+				1A40F5EB1D19629E00F7A1FA /* image1.jpg */,
+				1A40F5EC1D19629E00F7A1FA /* image10.jpg */,
+				1A40F5ED1D19629E00F7A1FA /* image12.jpg */,
+				1A40F5EE1D19629E00F7A1FA /* image2.jpg */,
+				1A40F5EF1D19629E00F7A1FA /* image3.jpg */,
+				1A40F5F01D19629E00F7A1FA /* image4.jpg */,
+				1A40F5F11D19629E00F7A1FA /* image5.jpg */,
+				1A40F5F21D19629E00F7A1FA /* image6.jpg */,
+				1A40F5F31D19629E00F7A1FA /* image7.jpg */,
+				1A40F5F41D19629E00F7A1FA /* image8.jpg */,
+				1A40F5F51D19629E00F7A1FA /* image9.jpg */,
+			);
+			name = SampleImages;
+			sourceTree = "<group>";
+		};
 		1A82B83A1D13774600AF6702 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +291,7 @@
 		1A82B8451D13774600AF6702 /* Chancecon */ = {
 			isa = PBXGroup;
 			children = (
+				1A06F6311D196A8E009030F1 /* SKPhotoBrowser */,
 				1A82B8C31D141C5300AF6702 /* MMDrawerController */,
 				1A82B88F1D1385CD00AF6702 /* SDWebImage */,
 				1AA97A941D14DB2900B10A07 /* MBProgressHUD */,
@@ -174,7 +302,6 @@
 				1A82B84A1D13774600AF6702 /* Main.storyboard */,
 				1A82B8521D13774600AF6702 /* LaunchScreen.storyboard */,
 				1A82B8461D13774600AF6702 /* AppDelegate.swift */,
-				1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */,
 				1A82B85F1D13835400AF6702 /* Chancecon-Bridging-Header.h */,
 				1A82B8501D13774600AF6702 /* Assets.xcassets */,
 				1A82B8551D13774600AF6702 /* Info.plist */,
@@ -188,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				1A82B85B1D1377BA00AF6702 /* Retina_5.5.png */,
+				1A40F6021D1962A800F7A1FA /* SampleImages */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -267,7 +395,10 @@
 				1A82B8D51D148EC300AF6702 /* MainPageViewController.swift */,
 				1AA97A951D14E18D00B10A07 /* SignUpViewController.swift */,
 				1AEB268D1D17B9E500DB4AF0 /* GalleryViewController.swift */,
-				1AEB268F1D17BA1200DB4AF0 /* NotificationViewController.swift */,
+				1A40F5E51D1959D000F7A1FA /* PhotoBroswerViewController.swift */,
+				1ACF710D1D199BDF0082A10B /* NewsViewController.swift */,
+				1A40F5E81D19605C00F7A1FA /* CollectionViewCell.swift */,
+				1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -311,6 +442,7 @@
 			children = (
 				712E7D77D7BE81BB879A4A84 /* Pods-Chancecon.debug.xcconfig */,
 				0A6A4BF2A36EBCD162FFD333 /* Pods-Chancecon.release.xcconfig */,
+				80E6915FBB402862CC9F2322 /* Pods-Chancecon.ad hoc distribution.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -359,6 +491,14 @@
 					1A82B8421D13774600AF6702 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 94HMD4ME6A;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -385,13 +525,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A40F5FB1D19629E00F7A1FA /* image3.jpg in Resources */,
+				1A40F5FD1D19629E00F7A1FA /* image5.jpg in Resources */,
+				1A40F5FE1D19629E00F7A1FA /* image6.jpg in Resources */,
 				1A82B8541D13774600AF6702 /* LaunchScreen.storyboard in Resources */,
 				1A82B8511D13774600AF6702 /* Assets.xcassets in Resources */,
+				1A40F5FF1D19629E00F7A1FA /* image7.jpg in Resources */,
 				1A82B8D91D148F9600AF6702 /* GoogleService-Info.plist in Resources */,
-				1AA97AA21D15237E00B10A07 /* CircleProgressBar.xcconfig in Resources */,
+				1A40F5FC1D19629E00F7A1FA /* image4.jpg in Resources */,
+				1A06F63E1D196A8E009030F1 /* SKPhotoBrowser.bundle in Resources */,
+				1A40F5F61D19629E00F7A1FA /* image0.jpg in Resources */,
+				1A40F5F91D19629E00F7A1FA /* image12.jpg in Resources */,
 				1A82B84C1D13774600AF6702 /* Main.storyboard in Resources */,
 				1A82B85C1D1377BA00AF6702 /* Retina_5.5.png in Resources */,
+				1A40F6011D19629E00F7A1FA /* image9.jpg in Resources */,
 				1AA97AA41D15237E00B10A07 /* Info.plist in Resources */,
+				1A40F5F81D19629E00F7A1FA /* image10.jpg in Resources */,
+				1A40F5FA1D19629E00F7A1FA /* image2.jpg in Resources */,
+				1A40F6001D19629E00F7A1FA /* image8.jpg in Resources */,
+				1A40F5F71D19629E00F7A1FA /* image1.jpg in Resources */,
+				1A06F63F1D196A8E009030F1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,31 +603,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A06F63C1D196A8E009030F1 /* UIImage+Rotation.swift in Sources */,
 				1AEB268E1D17B9E500DB4AF0 /* GalleryViewController.swift in Sources */,
 				1A82B8BE1D1385CD00AF6702 /* UIImageView+HighlightedWebCache.m in Sources */,
+				1ACF710E1D199BDF0082A10B /* NewsViewController.swift in Sources */,
+				1A06F63A1D196A8E009030F1 /* SKPhotoBrowser.swift in Sources */,
+				1A40F5E91D19605C00F7A1FA /* CollectionViewCell.swift in Sources */,
 				1A82B8BC1D1385CD00AF6702 /* UIImage+MultiFormat.m in Sources */,
 				1A82B8D21D148A1B00AF6702 /* LeftSideViewController.swift in Sources */,
 				1A82B8B71D1385CD00AF6702 /* SDWebImageDownloaderOperation.m in Sources */,
 				1A82B8CD1D141C5300AF6702 /* MMDrawerBarButtonItem.m in Sources */,
 				1A82B8CE1D141C5300AF6702 /* MMDrawerController.m in Sources */,
+				1A40F5E61D1959D000F7A1FA /* PhotoBroswerViewController.swift in Sources */,
+				1A06F6341D196A8E009030F1 /* SKCaptionView.swift in Sources */,
+				1A06F6381D196A8E009030F1 /* SKLocalPhoto.swift in Sources */,
 				1A82B8621D13835500AF6702 /* LBLaunchImageAdView.m in Sources */,
 				1A82B8B41D1385CD00AF6702 /* SDWebImageCompat.m in Sources */,
+				1A06F6371D196A8E009030F1 /* SKIndicatorView.swift in Sources */,
 				1AA97A931D14DB2600B10A07 /* MBProgressHUD.m in Sources */,
 				1AA97AA31D15237E00B10A07 /* CircleProgressBar-dummy.m in Sources */,
 				1A82B8BB1D1385CD00AF6702 /* UIImage+GIF.m in Sources */,
 				1AF3EEF31D18D5BE00083C2B /* CustomCell.swift in Sources */,
-				1AEB26901D17BA1200DB4AF0 /* NotificationViewController.swift in Sources */,
 				1A82B8B91D1385CD00AF6702 /* SDWebImagePrefetcher.m in Sources */,
 				1A82B8491D13774600AF6702 /* ViewController.swift in Sources */,
 				1A82B8471D13774600AF6702 /* AppDelegate.swift in Sources */,
+				1A06F6411D196A8E009030F1 /* SKPhotoBrowser-dummy.m in Sources */,
 				1A82B8BD1D1385CD00AF6702 /* UIImage+WebP.m in Sources */,
 				1A82B8CF1D141C5300AF6702 /* MMDrawerVisualState.m in Sources */,
 				1A82B8D01D141C5300AF6702 /* UIViewController+MMDrawerController.m in Sources */,
 				1A82B8BF1D1385CD00AF6702 /* UIImageView+WebCache.m in Sources */,
 				1A82B8B61D1385CD00AF6702 /* SDWebImageDownloader.m in Sources */,
+				1A06F6351D196A8E009030F1 /* SKDetectingImageView.swift in Sources */,
 				1A82B8C01D1385CD00AF6702 /* UIView+WebCacheOperation.m in Sources */,
+				1A06F6331D196A8E009030F1 /* SKCacheable.swift in Sources */,
 				1A82B8BA1D1385CD00AF6702 /* UIButton+WebCache.m in Sources */,
 				1A82B8B11D1385CD00AF6702 /* MKAnnotationView+WebCache.m in Sources */,
+				1A06F6361D196A8E009030F1 /* SKDetectingView.swift in Sources */,
+				1A06F6391D196A8E009030F1 /* SKPhoto.swift in Sources */,
 				1A82B8C21D13911800AF6702 /* AdViewController.swift in Sources */,
 				1A82B8B21D1385CD00AF6702 /* NSData+ImageContentType.m in Sources */,
 				1A82B84F1D13774600AF6702 /* Chancecon.xcdatamodeld in Sources */,
@@ -482,9 +647,12 @@
 				1A82B8B81D1385CD00AF6702 /* SDWebImageManager.m in Sources */,
 				1A82B8B51D1385CD00AF6702 /* SDWebImageDecoder.m in Sources */,
 				1AA97AA11D15237E00B10A07 /* CircleProgressBar.m in Sources */,
+				1A06F63D1D196A8E009030F1 /* UIView+Radius.swift in Sources */,
 				1A82B8DD1D14B07000AF6702 /* AboutViewController.swift in Sources */,
 				1A82B8D61D148EC300AF6702 /* MainPageViewController.swift in Sources */,
 				1A82B8B31D1385CD00AF6702 /* SDImageCache.m in Sources */,
+				1A06F6321D196A8E009030F1 /* SKCache.swift in Sources */,
+				1A06F63B1D196A8E009030F1 /* SKZoomingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +678,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1A06F6191D19685A009030F1 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "ad hoc distribution";
+		};
+		1A06F61A1D19685A009030F1 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E6915FBB402862CC9F2322 /* Pods-Chancecon.ad hoc distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Chancecon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = freedom.chancellor.chancecon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chancecon/Chancecon-Bridging-Header.h";
+			};
+			name = "ad hoc distribution";
+		};
 		1A82B8561D13774600AF6702 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -602,7 +823,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chancecon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Chancecon.Chancecon;
+				PRODUCT_BUNDLE_IDENTIFIER = freedom.chancellor.chancecon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chancecon/Chancecon-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -618,7 +839,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chancecon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Chancecon.Chancecon;
+				PRODUCT_BUNDLE_IDENTIFIER = freedom.chancellor.chancecon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chancecon/Chancecon-Bridging-Header.h";
 			};
@@ -632,6 +853,7 @@
 			buildConfigurations = (
 				1A82B8561D13774600AF6702 /* Debug */,
 				1A82B8571D13774600AF6702 /* Release */,
+				1A06F6191D19685A009030F1 /* ad hoc distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -641,6 +863,7 @@
 			buildConfigurations = (
 				1A82B8591D13774600AF6702 /* Debug */,
 				1A82B85A1D13774600AF6702 /* Release */,
+				1A06F61A1D19685A009030F1 /* ad hoc distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

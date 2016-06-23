@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>152250212701-jvm9bp996m3bgnlh6fbo7sfe0u2kom5c.apps.googleusercontent.com</string>
+	<string>557119648931-juvd5mg9352e3kegcai5j7hkfbi08mja.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.152250212701-jvm9bp996m3bgnlh6fbo7sfe0u2kom5c</string>
+	<string>com.googleusercontent.apps.557119648931-juvd5mg9352e3kegcai5j7hkfbi08mja</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCVky1RExajlHzSPNEH8TSdG8YNYbZP6qc</string>
+	<string>AIzaSyD8ydoJb_NjyXTEh9pVMeYohH_u1wDyHKY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>152250212701</string>
+	<string>557119648931</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Chancecon.Chancecon</string>
+	<string>freedom.chancecon.chancecon</string>
 	<key>PROJECT_ID</key>
-	<string>chancecon-5748d</string>
+	<string>chancecon-32b5a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chancecon-5748d.appspot.com</string>
+	<string>chancecon-32b5a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:152250212701:ios:340e59e96250b4df</string>
+	<string>1:557119648931:ios:499b8f913b8cfc7a</string>
 	<key>DATABASE_URL</key>
-	<string>https://chancecon-5748d.firebaseio.com</string>
+	<string>https://chancecon-32b5a.firebaseio.com</string>
 </dict>
 </plist>
