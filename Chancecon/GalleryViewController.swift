@@ -48,20 +48,13 @@ class GalleryViewController: UIViewController, UITableViewDelegate, UITableViewD
         imageCell.cellDescription.text = galleryDescription[indexPath.row]
         return imageCell
     }
-
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//    }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.galleryList!.deselectRowAtIndexPath(indexPath, animated: true)
+        let itemString = galleryTitle[indexPath.row]
+        Variables.albums = itemString
+        print(Variables.albums)
+        self.performSegueWithIdentifier("SegueShowPhoto", sender: itemString)
     }
-    */
-
 }

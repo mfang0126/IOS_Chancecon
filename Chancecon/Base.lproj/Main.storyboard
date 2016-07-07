@@ -676,7 +676,7 @@
                                             <outlet property="cellDescription" destination="yc4-Hg-oIH" id="9EH-vS-pLw"/>
                                             <outlet property="cellPhoto" destination="FhU-O4-4G5" id="xYR-tg-YH0"/>
                                             <outlet property="cellTitle" destination="0FN-vE-lDn" id="jve-Nq-6GD"/>
-                                            <segue destination="2gf-mF-917" kind="show" id="W8v-TK-k4T"/>
+                                            <segue destination="Vwd-hX-5ZM" kind="presentation" identifier="SegueShowPhoto" modalTransitionStyle="crossDissolve" id="i6j-6y-WSi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -766,6 +766,14 @@
                             <constraint firstItem="W9o-Rn-xJL" firstAttribute="width" secondItem="Sa0-Jt-s2S" secondAttribute="width" id="d2X-hN-q0v"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dRa-ZW-BdK">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="J1R-35-Mfy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backButton:" destination="2gf-mF-917" id="gYK-zf-JjS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="photoCollection" destination="W9o-Rn-xJL" id="GNc-tg-E3k"/>
@@ -773,7 +781,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bow-c2-h8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3156.5" y="-39.5"/>
+            <point key="canvasLocation" x="3625.5" y="-39.5"/>
         </scene>
         <!--MainPage Nav-->
         <scene sceneID="PHx-3T-DIK">
@@ -878,6 +886,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwa-lq-HwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2232.5" y="-39.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PXi-rV-aJY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HkM-mf-4PJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vwd-hX-5ZM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="czD-8A-jZz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2gf-mF-917" kind="relationship" relationship="rootViewController" id="tUX-RP-juE"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3156.5" y="-39.5"/>
         </scene>
     </scenes>
     <resources>

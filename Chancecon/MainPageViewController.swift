@@ -14,9 +14,7 @@ import FirebaseAuth
 
 class MainPageViewController: UIViewController {
     
-    var comments: Array<FIRDataSnapshot> = []
     var ref:FIRDatabaseReference!
-    let userID = FIRAuth.auth()?.currentUser?.uid
     
     @IBOutlet weak var progressBarOut: CircleProgressBar!
     @IBOutlet weak var progressBarIn: CircleProgressBar!
@@ -38,7 +36,6 @@ class MainPageViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         getInstanceValue()
-
     }
     
     override func viewDidLoad() {
@@ -59,22 +56,35 @@ class MainPageViewController: UIViewController {
     }
     
     func getInstanceValue() {
+        //get user Id
         let uid = FIRAuth.auth()?.currentUser?.uid
+        //retrieve data from Firebase
         FIRDatabase.database().reference().child("users").child(uid!).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            
+//            print(snapshot)
             self.dashboardDescription.text = snapshot.value!["description"] as! String
+//            print(self.dashboardDescription.text)
+            
             self.dashboardDescription.font = UIFont (name: "Helvetica Neue", size: 15)
             self.percentageIn.text = snapshot.value!["percentageIn"] as? String
+//            print(self.percentageIn.text)
+            
             self.percentageOut.text = snapshot.value!["percentageOut"] as? String
+//            print(self.percentageOut.text)
             
             let inNumber = snapshot.value!["progressIn"] as! CGFloat
             self.progressBarIn.setProgress(inNumber, animated: true)
+//            print(inNumber)
             
             let outNumber = snapshot.value!["progressOut"] as! CGFloat
             self.progressBarOut.setProgress(outNumber, animated: true)
+//            print(outNumber)
+            
         }) { (error) in
             print(error.localizedDescription)
         }
         
     }
+
 }
 

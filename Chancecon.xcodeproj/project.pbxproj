@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A06F6321D196A8E009030F1 /* SKCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61B1D196A8E009030F1 /* SKCache.swift */; };
-		1A06F6331D196A8E009030F1 /* SKCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61C1D196A8E009030F1 /* SKCacheable.swift */; };
-		1A06F6341D196A8E009030F1 /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61D1D196A8E009030F1 /* SKCaptionView.swift */; };
-		1A06F6351D196A8E009030F1 /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61E1D196A8E009030F1 /* SKDetectingImageView.swift */; };
-		1A06F6361D196A8E009030F1 /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F61F1D196A8E009030F1 /* SKDetectingView.swift */; };
-		1A06F6371D196A8E009030F1 /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6201D196A8E009030F1 /* SKIndicatorView.swift */; };
-		1A06F6381D196A8E009030F1 /* SKLocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6211D196A8E009030F1 /* SKLocalPhoto.swift */; };
-		1A06F6391D196A8E009030F1 /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6221D196A8E009030F1 /* SKPhoto.swift */; };
-		1A06F63A1D196A8E009030F1 /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6241D196A8E009030F1 /* SKPhotoBrowser.swift */; };
-		1A06F63B1D196A8E009030F1 /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6251D196A8E009030F1 /* SKZoomingScrollView.swift */; };
-		1A06F63C1D196A8E009030F1 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6261D196A8E009030F1 /* UIImage+Rotation.swift */; };
-		1A06F63D1D196A8E009030F1 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F6271D196A8E009030F1 /* UIView+Radius.swift */; };
-		1A06F63E1D196A8E009030F1 /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A06F6281D196A8E009030F1 /* SKPhotoBrowser.bundle */; };
-		1A06F63F1D196A8E009030F1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A06F62A1D196A8E009030F1 /* Info.plist */; };
-		1A06F6411D196A8E009030F1 /* SKPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06F62D1D196A8E009030F1 /* SKPhotoBrowser-dummy.m */; };
+		1A1EE42D1D1D22B000365A00 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE42C1D1D22B000365A00 /* MBProgressHUD.m */; };
+		1A1EE4301D1D22CF00365A00 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE42F1D1D22CF00365A00 /* CircleProgressBar.m */; };
+		1A1EE4461D1D22E600365A00 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE4321D1D22E600365A00 /* MMDrawerController.m */; };
+		1A1EE4471D1D22E600365A00 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE4341D1D22E600365A00 /* UIViewController+MMDrawerController.m */; };
+		1A1EE4481D1D22E600365A00 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE4371D1D22E600365A00 /* MMDrawerBarButtonItem.m */; };
+		1A1EE4491D1D22E600365A00 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE43A1D1D22E600365A00 /* MMDrawerVisualState.m */; };
+		1A1EE44A1D1D22E600365A00 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1EE43E1D1D22E600365A00 /* Info.plist */; };
+		1A1EE44C1D1D22E600365A00 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EE4411D1D22E600365A00 /* MMDrawerController-dummy.m */; };
 		1A40F5E61D1959D000F7A1FA /* PhotoBroswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F5E51D1959D000F7A1FA /* PhotoBroswerViewController.swift */; };
 		1A40F5E91D19605C00F7A1FA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F5E81D19605C00F7A1FA /* CollectionViewCell.swift */; };
 		1A40F5F61D19629E00F7A1FA /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A40F5EA1D19629E00F7A1FA /* image0.jpg */; };
@@ -61,19 +54,12 @@
 		1A82B8BF1D1385CD00AF6702 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8AE1D1385CD00AF6702 /* UIImageView+WebCache.m */; };
 		1A82B8C01D1385CD00AF6702 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8B01D1385CD00AF6702 /* UIView+WebCacheOperation.m */; };
 		1A82B8C21D13911800AF6702 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8C11D13911800AF6702 /* AdViewController.swift */; };
-		1A82B8CD1D141C5300AF6702 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8C51D141C5300AF6702 /* MMDrawerBarButtonItem.m */; };
-		1A82B8CE1D141C5300AF6702 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8C81D141C5300AF6702 /* MMDrawerController.m */; };
-		1A82B8CF1D141C5300AF6702 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8CA1D141C5300AF6702 /* MMDrawerVisualState.m */; };
-		1A82B8D01D141C5300AF6702 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8CC1D141C5300AF6702 /* UIViewController+MMDrawerController.m */; };
 		1A82B8D21D148A1B00AF6702 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8D11D148A1B00AF6702 /* LeftSideViewController.swift */; };
 		1A82B8D61D148EC300AF6702 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8D51D148EC300AF6702 /* MainPageViewController.swift */; };
 		1A82B8D91D148F9600AF6702 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A82B8D81D148F9600AF6702 /* GoogleService-Info.plist */; };
 		1A82B8DD1D14B07000AF6702 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82B8DC1D14B07000AF6702 /* AboutViewController.swift */; };
-		1AA97A931D14DB2600B10A07 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A921D14DB2600B10A07 /* MBProgressHUD.m */; };
+		1A94BB9B1D2DD7E800317925 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94BB9A1D2DD7E800317925 /* Values.swift */; };
 		1AA97A961D14E18D00B10A07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A951D14E18D00B10A07 /* SignUpViewController.swift */; };
-		1AA97AA11D15237E00B10A07 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A981D15237E00B10A07 /* CircleProgressBar.m */; };
-		1AA97AA31D15237E00B10A07 /* CircleProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA97A9B1D15237E00B10A07 /* CircleProgressBar-dummy.m */; };
-		1AA97AA41D15237E00B10A07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AA97A9E1D15237E00B10A07 /* Info.plist */; };
 		1ACF710E1D199BDF0082A10B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF710D1D199BDF0082A10B /* NewsViewController.swift */; };
 		1AEB268E1D17B9E500DB4AF0 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB268D1D17B9E500DB4AF0 /* GalleryViewController.swift */; };
 		1AF3EEF31D18D5BE00083C2B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */; };
@@ -82,26 +68,25 @@
 
 /* Begin PBXFileReference section */
 		0A6A4BF2A36EBCD162FFD333 /* Pods-Chancecon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chancecon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chancecon/Pods-Chancecon.release.xcconfig"; sourceTree = "<group>"; };
-		1A06F61B1D196A8E009030F1 /* SKCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKCache.swift; path = SKPhotoBrowser/SKCache.swift; sourceTree = "<group>"; };
-		1A06F61C1D196A8E009030F1 /* SKCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKCacheable.swift; path = SKPhotoBrowser/SKCacheable.swift; sourceTree = "<group>"; };
-		1A06F61D1D196A8E009030F1 /* SKCaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKCaptionView.swift; path = SKPhotoBrowser/SKCaptionView.swift; sourceTree = "<group>"; };
-		1A06F61E1D196A8E009030F1 /* SKDetectingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKDetectingImageView.swift; path = SKPhotoBrowser/SKDetectingImageView.swift; sourceTree = "<group>"; };
-		1A06F61F1D196A8E009030F1 /* SKDetectingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKDetectingView.swift; path = SKPhotoBrowser/SKDetectingView.swift; sourceTree = "<group>"; };
-		1A06F6201D196A8E009030F1 /* SKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKIndicatorView.swift; path = SKPhotoBrowser/SKIndicatorView.swift; sourceTree = "<group>"; };
-		1A06F6211D196A8E009030F1 /* SKLocalPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKLocalPhoto.swift; path = SKPhotoBrowser/SKLocalPhoto.swift; sourceTree = "<group>"; };
-		1A06F6221D196A8E009030F1 /* SKPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKPhoto.swift; path = SKPhotoBrowser/SKPhoto.swift; sourceTree = "<group>"; };
-		1A06F6231D196A8E009030F1 /* SKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKPhotoBrowser.h; path = SKPhotoBrowser/SKPhotoBrowser.h; sourceTree = "<group>"; };
-		1A06F6241D196A8E009030F1 /* SKPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKPhotoBrowser.swift; path = SKPhotoBrowser/SKPhotoBrowser.swift; sourceTree = "<group>"; };
-		1A06F6251D196A8E009030F1 /* SKZoomingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKZoomingScrollView.swift; path = SKPhotoBrowser/SKZoomingScrollView.swift; sourceTree = "<group>"; };
-		1A06F6261D196A8E009030F1 /* UIImage+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Rotation.swift"; path = "SKPhotoBrowser/extensions/UIImage+Rotation.swift"; sourceTree = "<group>"; };
-		1A06F6271D196A8E009030F1 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Radius.swift"; path = "SKPhotoBrowser/extensions/UIView+Radius.swift"; sourceTree = "<group>"; };
-		1A06F6281D196A8E009030F1 /* SKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SKPhotoBrowser.bundle; path = SKPhotoBrowser/SKPhotoBrowser.bundle; sourceTree = "<group>"; };
-		1A06F62A1D196A8E009030F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A06F62B1D196A8E009030F1 /* SKPhotoBrowser.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SKPhotoBrowser.modulemap; sourceTree = "<group>"; };
-		1A06F62C1D196A8E009030F1 /* SKPhotoBrowser.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SKPhotoBrowser.xcconfig; sourceTree = "<group>"; };
-		1A06F62D1D196A8E009030F1 /* SKPhotoBrowser-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
-		1A06F62E1D196A8E009030F1 /* SKPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
-		1A06F62F1D196A8E009030F1 /* SKPhotoBrowser-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPhotoBrowser-umbrella.h"; sourceTree = "<group>"; };
+		1A1EE42B1D1D22B000365A00 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1A1EE42C1D1D22B000365A00 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1A1EE42E1D1D22CF00365A00 /* CircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressBar.h; sourceTree = "<group>"; };
+		1A1EE42F1D1D22CF00365A00 /* CircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBar.m; sourceTree = "<group>"; };
+		1A1EE4311D1D22E600365A00 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		1A1EE4321D1D22E600365A00 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		1A1EE4331D1D22E600365A00 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		1A1EE4341D1D22E600365A00 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		1A1EE4361D1D22E600365A00 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		1A1EE4371D1D22E600365A00 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		1A1EE4391D1D22E600365A00 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		1A1EE43A1D1D22E600365A00 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		1A1EE43C1D1D22E600365A00 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		1A1EE43E1D1D22E600365A00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1EE43F1D1D22E600365A00 /* MMDrawerController.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = MMDrawerController.modulemap; sourceTree = "<group>"; };
+		1A1EE4401D1D22E600365A00 /* MMDrawerController.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MMDrawerController.xcconfig; sourceTree = "<group>"; };
+		1A1EE4411D1D22E600365A00 /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
+		1A1EE4421D1D22E600365A00 /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		1A1EE4431D1D22E600365A00 /* MMDrawerController-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-umbrella.h"; sourceTree = "<group>"; };
 		1A40F5E51D1959D000F7A1FA /* PhotoBroswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBroswerViewController.swift; sourceTree = "<group>"; };
 		1A40F5E81D19605C00F7A1FA /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1A40F5EA1D19629E00F7A1FA /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
@@ -162,30 +147,12 @@
 		1A82B8AF1D1385CD00AF6702 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		1A82B8B01D1385CD00AF6702 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		1A82B8C11D13911800AF6702 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
-		1A82B8C41D141C5300AF6702 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		1A82B8C51D141C5300AF6702 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		1A82B8C61D141C5300AF6702 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		1A82B8C71D141C5300AF6702 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
-		1A82B8C81D141C5300AF6702 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
-		1A82B8C91D141C5300AF6702 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
-		1A82B8CA1D141C5300AF6702 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
-		1A82B8CB1D141C5300AF6702 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		1A82B8CC1D141C5300AF6702 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		1A82B8D11D148A1B00AF6702 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 		1A82B8D51D148EC300AF6702 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		1A82B8D81D148F9600AF6702 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A82B8DC1D14B07000AF6702 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		1AA97A911D14DB2600B10A07 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		1AA97A921D14DB2600B10A07 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1A94BB9A1D2DD7E800317925 /* Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
 		1AA97A951D14E18D00B10A07 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		1AA97A971D15237E00B10A07 /* CircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleProgressBar.h; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.h; sourceTree = "<group>"; };
-		1AA97A981D15237E00B10A07 /* CircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleProgressBar.m; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.m; sourceTree = "<group>"; };
-		1AA97A991D15237E00B10A07 /* CircleProgressBar.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = CircleProgressBar.modulemap; sourceTree = "<group>"; };
-		1AA97A9A1D15237E00B10A07 /* CircleProgressBar.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CircleProgressBar.xcconfig; sourceTree = "<group>"; };
-		1AA97A9B1D15237E00B10A07 /* CircleProgressBar-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CircleProgressBar-dummy.m"; sourceTree = "<group>"; };
-		1AA97A9C1D15237E00B10A07 /* CircleProgressBar-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-prefix.pch"; sourceTree = "<group>"; };
-		1AA97A9D1D15237E00B10A07 /* CircleProgressBar-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-umbrella.h"; sourceTree = "<group>"; };
-		1AA97A9E1D15237E00B10A07 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ACF710D1D199BDF0082A10B /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		1AEB268D1D17B9E500DB4AF0 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -206,49 +173,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A06F6291D196A8E009030F1 /* Resources */ = {
+		1A1EE4351D1D22E600365A00 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				1A06F6281D196A8E009030F1 /* SKPhotoBrowser.bundle */,
+				1A1EE4311D1D22E600365A00 /* MMDrawerController.h */,
+				1A1EE4321D1D22E600365A00 /* MMDrawerController.m */,
+				1A1EE4331D1D22E600365A00 /* UIViewController+MMDrawerController.h */,
+				1A1EE4341D1D22E600365A00 /* UIViewController+MMDrawerController.m */,
 			);
-			name = Resources;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		1A06F6301D196A8E009030F1 /* Support Files */ = {
+		1A1EE4381D1D22E600365A00 /* MMDrawerBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
-				1A06F62A1D196A8E009030F1 /* Info.plist */,
-				1A06F62B1D196A8E009030F1 /* SKPhotoBrowser.modulemap */,
-				1A06F62C1D196A8E009030F1 /* SKPhotoBrowser.xcconfig */,
-				1A06F62D1D196A8E009030F1 /* SKPhotoBrowser-dummy.m */,
-				1A06F62E1D196A8E009030F1 /* SKPhotoBrowser-prefix.pch */,
-				1A06F62F1D196A8E009030F1 /* SKPhotoBrowser-umbrella.h */,
+				1A1EE4361D1D22E600365A00 /* MMDrawerBarButtonItem.h */,
+				1A1EE4371D1D22E600365A00 /* MMDrawerBarButtonItem.m */,
+			);
+			name = MMDrawerBarButtonItem;
+			sourceTree = "<group>";
+		};
+		1A1EE43B1D1D22E600365A00 /* MMDrawerVisualStates */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE4391D1D22E600365A00 /* MMDrawerVisualState.h */,
+				1A1EE43A1D1D22E600365A00 /* MMDrawerVisualState.m */,
+			);
+			name = MMDrawerVisualStates;
+			sourceTree = "<group>";
+		};
+		1A1EE43D1D1D22E600365A00 /* Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE43C1D1D22E600365A00 /* MMDrawerController+Subclass.h */,
+			);
+			name = Subclass;
+			sourceTree = "<group>";
+		};
+		1A1EE4441D1D22E600365A00 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE43E1D1D22E600365A00 /* Info.plist */,
+				1A1EE43F1D1D22E600365A00 /* MMDrawerController.modulemap */,
+				1A1EE4401D1D22E600365A00 /* MMDrawerController.xcconfig */,
+				1A1EE4411D1D22E600365A00 /* MMDrawerController-dummy.m */,
+				1A1EE4421D1D22E600365A00 /* MMDrawerController-prefix.pch */,
+				1A1EE4431D1D22E600365A00 /* MMDrawerController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SKPhotoBrowser";
+			path = "../Target Support Files/MMDrawerController";
 			sourceTree = "<group>";
 		};
-		1A06F6311D196A8E009030F1 /* SKPhotoBrowser */ = {
+		1A1EE4451D1D22E600365A00 /* MMDrawerController */ = {
 			isa = PBXGroup;
 			children = (
-				1A06F61B1D196A8E009030F1 /* SKCache.swift */,
-				1A06F61C1D196A8E009030F1 /* SKCacheable.swift */,
-				1A06F61D1D196A8E009030F1 /* SKCaptionView.swift */,
-				1A06F61E1D196A8E009030F1 /* SKDetectingImageView.swift */,
-				1A06F61F1D196A8E009030F1 /* SKDetectingView.swift */,
-				1A06F6201D196A8E009030F1 /* SKIndicatorView.swift */,
-				1A06F6211D196A8E009030F1 /* SKLocalPhoto.swift */,
-				1A06F6221D196A8E009030F1 /* SKPhoto.swift */,
-				1A06F6231D196A8E009030F1 /* SKPhotoBrowser.h */,
-				1A06F6241D196A8E009030F1 /* SKPhotoBrowser.swift */,
-				1A06F6251D196A8E009030F1 /* SKZoomingScrollView.swift */,
-				1A06F6261D196A8E009030F1 /* UIImage+Rotation.swift */,
-				1A06F6271D196A8E009030F1 /* UIView+Radius.swift */,
-				1A06F6291D196A8E009030F1 /* Resources */,
-				1A06F6301D196A8E009030F1 /* Support Files */,
+				1A1EE4351D1D22E600365A00 /* Core */,
+				1A1EE4381D1D22E600365A00 /* MMDrawerBarButtonItem */,
+				1A1EE43B1D1D22E600365A00 /* MMDrawerVisualStates */,
+				1A1EE43D1D1D22E600365A00 /* Subclass */,
+				1A1EE4441D1D22E600365A00 /* Support Files */,
 			);
-			name = SKPhotoBrowser;
-			path = ../Pods/SKPhotoBrowser;
+			name = MMDrawerController;
+			path = ../Pods/MMDrawerController;
+			sourceTree = "<group>";
+		};
+		1A1EE44D1D1D231F00365A00 /* ImportSource */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EE4451D1D22E600365A00 /* MMDrawerController */,
+				1A82B85E1D13833A00AF6702 /* LBLaunchImageAd */,
+				1A82B88F1D1385CD00AF6702 /* SDWebImage */,
+				1A1EE42F1D1D22CF00365A00 /* CircleProgressBar.m */,
+				1A1EE42B1D1D22B000365A00 /* MBProgressHUD.h */,
+				1A1EE42C1D1D22B000365A00 /* MBProgressHUD.m */,
+				1A1EE42E1D1D22CF00365A00 /* CircleProgressBar.h */,
+			);
+			name = ImportSource;
 			sourceTree = "<group>";
 		};
 		1A40F6021D1962A800F7A1FA /* SampleImages */ = {
@@ -291,12 +291,7 @@
 		1A82B8451D13774600AF6702 /* Chancecon */ = {
 			isa = PBXGroup;
 			children = (
-				1A06F6311D196A8E009030F1 /* SKPhotoBrowser */,
-				1A82B8C31D141C5300AF6702 /* MMDrawerController */,
-				1A82B88F1D1385CD00AF6702 /* SDWebImage */,
-				1AA97A941D14DB2900B10A07 /* MBProgressHUD */,
-				1AA97AA01D15237E00B10A07 /* CircleProgressBar */,
-				1A82B85E1D13833A00AF6702 /* LBLaunchImageAd */,
+				1A1EE44D1D1D231F00365A00 /* ImportSource */,
 				1A82B85D1D1377BD00AF6702 /* Resource */,
 				1A82B8D71D148ECD00AF6702 /* ViewController */,
 				1A82B84A1D13774600AF6702 /* Main.storyboard */,
@@ -369,22 +364,6 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		1A82B8C31D141C5300AF6702 /* MMDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				1A82B8C41D141C5300AF6702 /* MMDrawerBarButtonItem.h */,
-				1A82B8C51D141C5300AF6702 /* MMDrawerBarButtonItem.m */,
-				1A82B8C61D141C5300AF6702 /* MMDrawerController+Subclass.h */,
-				1A82B8C71D141C5300AF6702 /* MMDrawerController.h */,
-				1A82B8C81D141C5300AF6702 /* MMDrawerController.m */,
-				1A82B8C91D141C5300AF6702 /* MMDrawerVisualState.h */,
-				1A82B8CA1D141C5300AF6702 /* MMDrawerVisualState.m */,
-				1A82B8CB1D141C5300AF6702 /* UIViewController+MMDrawerController.h */,
-				1A82B8CC1D141C5300AF6702 /* UIViewController+MMDrawerController.m */,
-			);
-			path = MMDrawerController;
-			sourceTree = "<group>";
-		};
 		1A82B8D71D148ECD00AF6702 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,42 +378,9 @@
 				1ACF710D1D199BDF0082A10B /* NewsViewController.swift */,
 				1A40F5E81D19605C00F7A1FA /* CollectionViewCell.swift */,
 				1AF3EEF21D18D5BE00083C2B /* CustomCell.swift */,
+				1A94BB9A1D2DD7E800317925 /* Values.swift */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		1AA97A941D14DB2900B10A07 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				1AA97A911D14DB2600B10A07 /* MBProgressHUD.h */,
-				1AA97A921D14DB2600B10A07 /* MBProgressHUD.m */,
-			);
-			name = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		1AA97A9F1D15237E00B10A07 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1AA97A991D15237E00B10A07 /* CircleProgressBar.modulemap */,
-				1AA97A9A1D15237E00B10A07 /* CircleProgressBar.xcconfig */,
-				1AA97A9B1D15237E00B10A07 /* CircleProgressBar-dummy.m */,
-				1AA97A9C1D15237E00B10A07 /* CircleProgressBar-prefix.pch */,
-				1AA97A9D1D15237E00B10A07 /* CircleProgressBar-umbrella.h */,
-				1AA97A9E1D15237E00B10A07 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CircleProgressBar";
-			sourceTree = "<group>";
-		};
-		1AA97AA01D15237E00B10A07 /* CircleProgressBar */ = {
-			isa = PBXGroup;
-			children = (
-				1AA97A971D15237E00B10A07 /* CircleProgressBar.h */,
-				1AA97A981D15237E00B10A07 /* CircleProgressBar.m */,
-				1AA97A9F1D15237E00B10A07 /* Support Files */,
-			);
-			name = CircleProgressBar;
-			path = ../Pods/CircleProgressBar;
 			sourceTree = "<group>";
 		};
 		21E2630E1CEF92C72FAABB14 /* Pods */ = {
@@ -527,24 +473,22 @@
 			files = (
 				1A40F5FB1D19629E00F7A1FA /* image3.jpg in Resources */,
 				1A40F5FD1D19629E00F7A1FA /* image5.jpg in Resources */,
+				1A1EE44A1D1D22E600365A00 /* Info.plist in Resources */,
 				1A40F5FE1D19629E00F7A1FA /* image6.jpg in Resources */,
 				1A82B8541D13774600AF6702 /* LaunchScreen.storyboard in Resources */,
 				1A82B8511D13774600AF6702 /* Assets.xcassets in Resources */,
 				1A40F5FF1D19629E00F7A1FA /* image7.jpg in Resources */,
 				1A82B8D91D148F9600AF6702 /* GoogleService-Info.plist in Resources */,
 				1A40F5FC1D19629E00F7A1FA /* image4.jpg in Resources */,
-				1A06F63E1D196A8E009030F1 /* SKPhotoBrowser.bundle in Resources */,
 				1A40F5F61D19629E00F7A1FA /* image0.jpg in Resources */,
 				1A40F5F91D19629E00F7A1FA /* image12.jpg in Resources */,
 				1A82B84C1D13774600AF6702 /* Main.storyboard in Resources */,
 				1A82B85C1D1377BA00AF6702 /* Retina_5.5.png in Resources */,
 				1A40F6011D19629E00F7A1FA /* image9.jpg in Resources */,
-				1AA97AA41D15237E00B10A07 /* Info.plist in Resources */,
 				1A40F5F81D19629E00F7A1FA /* image10.jpg in Resources */,
 				1A40F5FA1D19629E00F7A1FA /* image2.jpg in Resources */,
 				1A40F6001D19629E00F7A1FA /* image8.jpg in Resources */,
 				1A40F5F71D19629E00F7A1FA /* image1.jpg in Resources */,
-				1A06F63F1D196A8E009030F1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,56 +547,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A06F63C1D196A8E009030F1 /* UIImage+Rotation.swift in Sources */,
 				1AEB268E1D17B9E500DB4AF0 /* GalleryViewController.swift in Sources */,
 				1A82B8BE1D1385CD00AF6702 /* UIImageView+HighlightedWebCache.m in Sources */,
 				1ACF710E1D199BDF0082A10B /* NewsViewController.swift in Sources */,
-				1A06F63A1D196A8E009030F1 /* SKPhotoBrowser.swift in Sources */,
 				1A40F5E91D19605C00F7A1FA /* CollectionViewCell.swift in Sources */,
 				1A82B8BC1D1385CD00AF6702 /* UIImage+MultiFormat.m in Sources */,
 				1A82B8D21D148A1B00AF6702 /* LeftSideViewController.swift in Sources */,
 				1A82B8B71D1385CD00AF6702 /* SDWebImageDownloaderOperation.m in Sources */,
-				1A82B8CD1D141C5300AF6702 /* MMDrawerBarButtonItem.m in Sources */,
-				1A82B8CE1D141C5300AF6702 /* MMDrawerController.m in Sources */,
+				1A94BB9B1D2DD7E800317925 /* Values.swift in Sources */,
 				1A40F5E61D1959D000F7A1FA /* PhotoBroswerViewController.swift in Sources */,
-				1A06F6341D196A8E009030F1 /* SKCaptionView.swift in Sources */,
-				1A06F6381D196A8E009030F1 /* SKLocalPhoto.swift in Sources */,
 				1A82B8621D13835500AF6702 /* LBLaunchImageAdView.m in Sources */,
 				1A82B8B41D1385CD00AF6702 /* SDWebImageCompat.m in Sources */,
-				1A06F6371D196A8E009030F1 /* SKIndicatorView.swift in Sources */,
-				1AA97A931D14DB2600B10A07 /* MBProgressHUD.m in Sources */,
-				1AA97AA31D15237E00B10A07 /* CircleProgressBar-dummy.m in Sources */,
 				1A82B8BB1D1385CD00AF6702 /* UIImage+GIF.m in Sources */,
 				1AF3EEF31D18D5BE00083C2B /* CustomCell.swift in Sources */,
 				1A82B8B91D1385CD00AF6702 /* SDWebImagePrefetcher.m in Sources */,
+				1A1EE4491D1D22E600365A00 /* MMDrawerVisualState.m in Sources */,
+				1A1EE4481D1D22E600365A00 /* MMDrawerBarButtonItem.m in Sources */,
 				1A82B8491D13774600AF6702 /* ViewController.swift in Sources */,
+				1A1EE4301D1D22CF00365A00 /* CircleProgressBar.m in Sources */,
 				1A82B8471D13774600AF6702 /* AppDelegate.swift in Sources */,
-				1A06F6411D196A8E009030F1 /* SKPhotoBrowser-dummy.m in Sources */,
+				1A1EE42D1D1D22B000365A00 /* MBProgressHUD.m in Sources */,
 				1A82B8BD1D1385CD00AF6702 /* UIImage+WebP.m in Sources */,
-				1A82B8CF1D141C5300AF6702 /* MMDrawerVisualState.m in Sources */,
-				1A82B8D01D141C5300AF6702 /* UIViewController+MMDrawerController.m in Sources */,
 				1A82B8BF1D1385CD00AF6702 /* UIImageView+WebCache.m in Sources */,
 				1A82B8B61D1385CD00AF6702 /* SDWebImageDownloader.m in Sources */,
-				1A06F6351D196A8E009030F1 /* SKDetectingImageView.swift in Sources */,
 				1A82B8C01D1385CD00AF6702 /* UIView+WebCacheOperation.m in Sources */,
-				1A06F6331D196A8E009030F1 /* SKCacheable.swift in Sources */,
 				1A82B8BA1D1385CD00AF6702 /* UIButton+WebCache.m in Sources */,
+				1A1EE4471D1D22E600365A00 /* UIViewController+MMDrawerController.m in Sources */,
 				1A82B8B11D1385CD00AF6702 /* MKAnnotationView+WebCache.m in Sources */,
-				1A06F6361D196A8E009030F1 /* SKDetectingView.swift in Sources */,
-				1A06F6391D196A8E009030F1 /* SKPhoto.swift in Sources */,
+				1A1EE44C1D1D22E600365A00 /* MMDrawerController-dummy.m in Sources */,
 				1A82B8C21D13911800AF6702 /* AdViewController.swift in Sources */,
 				1A82B8B21D1385CD00AF6702 /* NSData+ImageContentType.m in Sources */,
 				1A82B84F1D13774600AF6702 /* Chancecon.xcdatamodeld in Sources */,
 				1AA97A961D14E18D00B10A07 /* SignUpViewController.swift in Sources */,
 				1A82B8B81D1385CD00AF6702 /* SDWebImageManager.m in Sources */,
 				1A82B8B51D1385CD00AF6702 /* SDWebImageDecoder.m in Sources */,
-				1AA97AA11D15237E00B10A07 /* CircleProgressBar.m in Sources */,
-				1A06F63D1D196A8E009030F1 /* UIView+Radius.swift in Sources */,
 				1A82B8DD1D14B07000AF6702 /* AboutViewController.swift in Sources */,
 				1A82B8D61D148EC300AF6702 /* MainPageViewController.swift in Sources */,
+				1A1EE4461D1D22E600365A00 /* MMDrawerController.m in Sources */,
 				1A82B8B31D1385CD00AF6702 /* SDImageCache.m in Sources */,
-				1A06F6321D196A8E009030F1 /* SKCache.swift in Sources */,
-				1A06F63B1D196A8E009030F1 /* SKZoomingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

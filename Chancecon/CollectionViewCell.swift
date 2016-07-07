@@ -20,4 +20,25 @@ class CollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         collectionImage.image = nil
     }
+    
+    func setImageViewFromUrl(url: String) {
+        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+        if let nsURL = NSURL(string: url) {
+            session.dataTaskWithURL(nsURL, completionHandler: {
+                (response: NSData?, data: NSURLResponse?, error: NSError?) in
+                if error != nil {
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.collectionImage.image = UIImage()
+                    }
+                }
+                if let res = response, let image = UIImage(data: res) {
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.collectionImage.image = image
+                    }
+                }
+                session.finishTasksAndInvalidate()
+            }).resume()
+        }
+        return
+    }
 }

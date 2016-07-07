@@ -4,61 +4,98 @@
 //
 //  Created by Freedom on 21/06/16.
 //  Copyright © 2016 Chancellor Construction Ltd. All rights reserved.
-//
+//  gs://chancecon-32b5a.appspot.com
 
 import UIKit
 import SKPhotoBrowser
-import FirebaseStorage
 import Firebase
+import FirebaseAuth
 
 class PhotoBroswerViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, SKPhotoBrowserDelegate  {
-    
-    //firebase
-    var storageRef:FIRStorageReference!
     
     private final let screenBound = UIScreen.mainScreen().bounds
     private var screenWidth: CGFloat { return screenBound.size.width }
     private var screenHeight: CGFloat { return screenBound.size.height }
     @IBOutlet weak var photoCollection: UICollectionView!
+    @IBAction func backButton(sender: AnyObject) {
+        self.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
+
+    }
     
-    var images = [SKPhotoProtocol]()
-    var caption = ["Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-                   "It has survived not only five centuries, but also the leap into electronic typesetting",
-                   "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                   "It has survived not only five centuries, but also the leap into electronic typesetting",
-                   "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                   "It has survived not only five centuries, but also the leap into electronic typesetting",
-                   "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-                   ]
-    
+    var albumType = "Foundation"
+    let uid = FIRAuth.auth()?.currentUser?.uid
+    var cellNumber = 0
+    var images = [SKPhoto]()
+    var caption = [String]()
+    var url = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //firebase
-//        let userID = FIRAuth.auth()?.currentUser?.uid
-//        storageRef = FIRStorage.storage().referenceForURL("gs://chancecon-32b5a.appspot.com")
-//        if let user = FIRAuth.auth()?.currentUser {
-//            if let imageUrlAll = SKPhoto.photoWithImageURL()
-//        }
         
-        
-        for i in 0..<10 {
-            let photo = SKPhoto.photoWithImage(UIImage(named: "image\(i%10).jpg")!)
-            if i == 0 {
-                // MARK: [BUG] this image can't be cached!!!
-                photo.photoURL = "https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?crop=entropy&dpr=2&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1275"
-            }
-            if i == 1 {
-                photo.photoURL = "https://images.unsplash.com/photo-1458640904116-093b74971de9?crop=entropy&dpr=2&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1275"
-            }
-            photo.caption = caption[i%10]
-            images.append(photo)
+        //albumType
+        switch (Variables.albums) {
+        case "Foundation":
+            albumType = Variables.albums
+            break
+        case "Framing":
+            albumType = Variables.albums
+            break
+        case "Cladding":
+            albumType = Variables.albums
+            break
+        case "Interior GIB Stopping":
+            albumType = Variables.albums
+            break
+        case "Interior Finishing":
+            albumType = Variables.albums
+            break
+        case "Driveway&Landscape":
+            albumType = Variables.albums
+            break
+        case "Completed":
+            albumType = Variables.albums
+            break
+        default:
+            NSLog("Not Handled")
         }
         
+        //Navigation Bar
+        navigationController!.navigationBar.barStyle = .Black
+        
+        print("\(Variables.albums)")
+        
+        FIRDatabase.database().reference().child("images").child(uid!).child(albumType).observeEventType(.Value, withBlock: { snapshot in
+            
+            if (snapshot.value == nil) {
+                NSLog("No message")
+            } else  {
+                //fetch caption text
+                var insideCaption = [String]()
+                for snap in snapshot.children {
+                    let caption = snap.value.objectForKey("caption") as! String
+                    insideCaption.append(caption)
+                }
+                self.caption = insideCaption
+                
+                var insideUrl = [String]()
+                for snap in snapshot.children {
+                    let url = snap.value.objectForKey("url") as! String
+                    insideUrl.append(url)
+                }
+                self.url = insideUrl
+                self.cellNumber = self.url.count
+                for i in 0..<self.cellNumber {
+                    print(i)
+                    let photo = SKPhoto.photoWithImageURL("http://nas.fmfreedom.com/Chancecon/ScreenShots01.png")
+                    photo.caption = self.caption[i]
+                    photo.photoURL = self.url[i]
+                    photo.shouldCachePhotoURLImage = true
+                    self.images.append(photo)
+                }
+                
+
+            }
+        })
+
         setupTableView()
     }
 
@@ -78,14 +115,28 @@ class PhotoBroswerViewController: UIViewController, UICollectionViewDataSource, 
 
     // MARK: - UICollectionViewDataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        
+        return 10
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionCell", forIndexPath: indexPath) as? CollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.collectionImage.image = images[indexPath.row].underlyingImage
+        
+        FIRDatabase.database().reference().child("images").child(uid!).child(albumType).observeEventType(.Value, withBlock: { snapshot in
+            if (snapshot.value == nil) {
+                NSLog("No message")
+            } else  {
+                self.cellNumber = self.url.count
+                let photo = SKPhoto.photoWithImageURL("")
+                photo.caption = self.caption[0]
+                photo.photoURL = self.url[0]
+                photo.shouldCachePhotoURLImage = true
+                self.images.append(photo)
+                cell.setImageViewFromUrl(self.url[indexPath.row])
+            }
+        })
         return cell
     }
     
@@ -100,19 +151,13 @@ class PhotoBroswerViewController: UIViewController, UICollectionViewDataSource, 
         let browser = SKPhotoBrowser(originImage: originImage, photos: images, animatedFromView: cell)
         browser.initializePageIndex(indexPath.row)
         browser.delegate = self
-        browser.displayDeleteButton = false
+        browser.displayCounterLabel = false
         browser.statusBarStyle = .LightContent
         browser.bounceAnimation = true
-        // browser.enableSingleTapDismiss = true
+        browser.displayBackAndForwardButton = false
         
         // Can hide the action button by setting to false
         browser.displayAction = true
-        
-        // delete action(you must write `removePhoto` delegate, what resource you want to delete)
-        // browser.displayDeleteButton = true
-        
-        // Optional action button titles (if left off, it uses activity controller
-        // browser.actionButtonTitles = ["Do One Action", "Do Another Action"]
         
         presentViewController(browser, animated: true, completion: {})
     }
@@ -155,7 +200,6 @@ class PhotoBroswerViewController: UIViewController, UICollectionViewDataSource, 
     }
     
 }
-
 
 
 
