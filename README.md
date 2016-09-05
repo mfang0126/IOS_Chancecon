@@ -1,23 +1,16 @@
 # IOS_Chancecon
 This Application is Developed by Ming Fang, is for Chancellor Construction Ltd.
-Since this the first time to accomplish iOS application on my own, I thought it would be an example for everybody would like to learn iOS Swift Development.
+Since this the first time to accomplish iOS application on my own, I thought it would be an example for everybody would like to learn iOS Swift Development. Also this is a prototype application for Chancellor Construction before.
 
 If I missed anything, tell me please.
 
-
-
 # Related Github works:
 
-MMDrawerController
-
-SDWebImage
-
-MBProgressHUD
-
-CircleProgressBar
-
-LBLaunchImageAd
-
+Picasso
+Imagegallery
+Palette
+circularprogressbar
+ViewPagerIndicator
 
 # ScreenShot
 
@@ -34,12 +27,13 @@ LBLaunchImageAd
 
 
 
-Chancecon iOS App (99%)
+Chancecon iOS App 
 
 
 The iOS application is mainly focusing on enhancing the customer service, and give the customer to have a good opportunity to access instance information from Construction Site, which is designed for Chancellor Construction Ltd.
 
 The application development is based on Zero iOS application project development experience, and complete individually. Thus this the first time to accomplish iOS full stack application development.
+Beta version is launched
 
 
 
@@ -53,14 +47,7 @@ This is the first time to develop Android application on my own, and I am also t
 Chancellor Construction Website
 
 The website is developed by Wordpress and hosting on Amazon Web Service, and developed individually.
+Beta version is ready.
 
 
 
-Development History
-
-Rainbow in-sight  (DONE)
-The Coffee Academy (DONE)
-Freedom Nas (DONE)
-Freedom Blog (DONE)
-Freedom Sales (Updating)
-University Development Project 
